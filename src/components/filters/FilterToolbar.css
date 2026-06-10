@@ -1,0 +1,12 @@
+.filter-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.filter-toolbar__reset {
+  align-self: flex-end;
+  margin-left: auto;
+}

@@ -1,0 +1,60 @@
+.task-item {
+  display: flex;
+  align-items: stretch;
+  gap: 0.5rem;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  background: var(--surface-strong);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.task-item--selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.task-item__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 14px 0 0 14px;
+}
+
+.task-item__main:hover {
+  background: var(--accent-soft);
+}
+
+.task-item__title {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 0.92rem;
+}
+
+.task-item__badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.task-item__cycle {
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0 0.85rem;
+  border-radius: 0 14px 14px 0;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.task-item__cycle:hover {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+}

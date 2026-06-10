@@ -1,0 +1,28 @@
+.app {
+  min-height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.app__layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1.3fr 0.9fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.app__center {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  .app__layout {
+    grid-template-columns: 1fr;
+  }
+}

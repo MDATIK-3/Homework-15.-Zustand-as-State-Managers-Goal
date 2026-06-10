@@ -1,0 +1,23 @@
+.select-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.select-filter__control {
+  padding: 0.45rem 0.7rem;
+  border-radius: 10px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface-strong);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.select-filter__control:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}

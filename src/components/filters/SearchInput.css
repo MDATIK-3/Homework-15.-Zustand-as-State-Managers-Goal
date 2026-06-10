@@ -1,0 +1,27 @@
+.search-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  flex: 1 1 14rem;
+}
+
+.search-input__control {
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid var(--surface-border);
+  background: var(--surface-strong);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+}
+
+.search-input__control:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.search-input__control::placeholder {
+  color: var(--text-muted);
+}

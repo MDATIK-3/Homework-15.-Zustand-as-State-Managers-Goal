@@ -1,0 +1,40 @@
+.task-details {
+  padding: 1.25rem;
+}
+
+.task-details__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.task-details__title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.task-details__badges {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.task-details__description {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.task-details__meta {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.task-details__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}

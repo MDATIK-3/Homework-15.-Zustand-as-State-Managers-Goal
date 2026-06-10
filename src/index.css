@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light;
+  --bg-gradient: radial-gradient(circle at 20% 20%, #e3f6e8 0%, #d2efe0 35%, #c4e8d6 100%);
+  --surface: rgba(255, 255, 255, 0.55);
+  --surface-strong: rgba(255, 255, 255, 0.75);
+  --surface-border: rgba(255, 255, 255, 0.6);
+  --surface-shadow: 0 8px 32px rgba(31, 94, 64, 0.12);
+
+  --text-primary: #1f3d2d;
+  --text-secondary: #517a64;
+  --text-muted: #7c9c8b;
+
+  --accent: #3fa56e;
+  --accent-strong: #2f8a5a;
+  --accent-soft: rgba(63, 165, 110, 0.16);
+
+  --danger: #c2554b;
+
+  --badge-neutral-bg: rgba(120, 144, 132, 0.16);
+  --badge-neutral-text: #4f6e5d;
+  --badge-neutral-border: rgba(120, 144, 132, 0.3);
+
+  --badge-info-bg: rgba(74, 144, 198, 0.16);
+  --badge-info-text: #2f6694;
+  --badge-info-border: rgba(74, 144, 198, 0.3);
+
+  --badge-success-bg: rgba(63, 165, 110, 0.18);
+  --badge-success-text: #2f8a5a;
+  --badge-success-border: rgba(63, 165, 110, 0.32);
+
+  --badge-warning-bg: rgba(214, 163, 64, 0.18);
+  --badge-warning-text: #9a6f1f;
+  --badge-warning-border: rgba(214, 163, 64, 0.32);
+
+  --badge-danger-bg: rgba(194, 85, 75, 0.16);
+  --badge-danger-text: #ad4339;
+  --badge-danger-border: rgba(194, 85, 75, 0.3);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-gradient: radial-gradient(circle at 20% 20%, #16261d 0%, #11201a 40%, #0c1814 100%);
+  --surface: rgba(28, 48, 39, 0.55);
+  --surface-strong: rgba(33, 56, 45, 0.75);
+  --surface-border: rgba(120, 200, 160, 0.18);
+  --surface-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+  --text-primary: #e6f5ec;
+  --text-secondary: #a8c9b8;
+  --text-muted: #7fa292;
+
+  --accent: #57c98c;
+  --accent-strong: #7adba5;
+  --accent-soft: rgba(87, 201, 140, 0.18);
+
+  --danger: #e2867c;
+
+  --badge-neutral-bg: rgba(168, 201, 184, 0.12);
+  --badge-neutral-text: #c4ddd1;
+  --badge-neutral-border: rgba(168, 201, 184, 0.22);
+
+  --badge-info-bg: rgba(108, 178, 230, 0.16);
+  --badge-info-text: #a9d4f5;
+  --badge-info-border: rgba(108, 178, 230, 0.3);
+
+  --badge-success-bg: rgba(87, 201, 140, 0.18);
+  --badge-success-text: #aef0cb;
+  --badge-success-border: rgba(87, 201, 140, 0.32);
+
+  --badge-warning-bg: rgba(230, 188, 108, 0.18);
+  --badge-warning-text: #f3d6a0;
+  --badge-warning-border: rgba(230, 188, 108, 0.3);
+
+  --badge-danger-bg: rgba(226, 134, 124, 0.16);
+  --badge-danger-text: #f4bdb5;
+  --badge-danger-border: rgba(226, 134, 124, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  transition: background 0.4s ease, color 0.3s ease;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+.glass-panel {
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 18px;
+  box-shadow: var(--surface-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.panel-title {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
